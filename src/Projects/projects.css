@@ -1,0 +1,14 @@
+.project-content>img{
+  object-fit: cover;
+  width:80%;
+  height:40%; 
+ 
+}
+.project-page{
+  display: flex;
+  flex-wrap: wrap;
+  height:70vh;
+  gap:0.5rem;
+  justify-content: center;
+  align-items: center;
+}
