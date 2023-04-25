@@ -1,9 +1,11 @@
-.project-content>img{
-  object-fit: cover;
-  width:80%;
-  height:40%; 
- 
+.project-head{
+  max-height: 10vh;
 }
+.project-head>h1{
+  color:white;
+  font-size: 40px;
+}
+
 .project-page{
   display: flex;
   flex-wrap: wrap;
@@ -11,4 +13,61 @@
   gap:0.5rem;
   justify-content: center;
   align-items: center;
+}
+.project-content{
+   width:240px;
+   height:250px;
+   overflow: hidden;
+   text-align: center;
+   border-radius: 5px;
+   background-color: #fff;
+   border: 1px solid #ccc;
+   box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+   transition:0.5s ease-in-out;
+   
+}
+.project-content>h1{
+ font-size: 30px;
+ color:#ff9347;
+}
+.project-content>h3{
+  font-size: 20px;
+   }
+ 
+.btn-site {
+  width: 75px;
+  color: white;
+  background: linear-gradient(90deg, #fed54a, #ff9347);
+} 
+
+.btn-group > a {
+  font-size: small;
+  padding: 2%;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-repo {
+  background-color: rgb(37, 35, 35);
+  color: white;
+}
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+
+}
+
+a {
+  text-decoration: none;
+}
+.project-content:hover {
+  cursor: pointer;
+  transform: translateY(10px);
 }
