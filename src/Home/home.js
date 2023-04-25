@@ -16,7 +16,7 @@ const Home = () => {
         <br />
                   
         <button className="btn btn-resume">
-          <a href={"https://drive.google.com/file/d/1UzIiT7AbT6PZQ0Z8UyhJBhghnnKqDND9/view"}
+          <a href={"https://app.luminpdf.com/viewer/6447fd51ff5f27c0bf7bcdb6"}
           target="_blank"
           rel="noopener noreferrer" 
           >
