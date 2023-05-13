@@ -55,4 +55,15 @@
     color:white;
   
   }
-  
+  @media only screen and (min-width: 325px) and (max-width: 475px) {
+    .contact-page > h1 {
+      font-size: 36px;
+    }
+    .submit-btn {
+      width: 15vw;
+    }
+    form > input,
+    textarea {
+      width: 50vw;
+    }
+  }

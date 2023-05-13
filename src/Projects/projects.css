@@ -1,39 +1,43 @@
 .project-head{
-  max-height: 10vh;
+  max-height: 15vh;
 }
 .project-head>h1{
   color:white;
-  font-size: 40px;
+  font-size: 42px;
 }
-
 .project-page{
   display: flex;
   flex-wrap: wrap;
   height:70vh;
-  gap:0.5rem;
+  gap:2.5rem;
   justify-content: center;
   align-items: center;
 }
 .project-content{
-   width:240px;
-   height:250px;
-   overflow: hidden;
-   text-align: center;
-   border-radius: 5px;
-   background-color: #fff;
-   border: 1px solid #ccc;
-   box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
-   transition:0.5s ease-in-out;
-   
+width:230px;
+height:250px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+  transition:0.5s ease-in-out;
 }
 .project-content>h1{
- font-size: 30px;
- color:#ff9347;
+ font-size: 100%;
 }
-.project-content>h3{
-  font-size: 20px;
-   }
+.project-content>img{
+  object-fit: cover;
+  width:80%;
+  height:40%; 
  
+}
+.project-content>img:hover{
+
+  opacity:0.7;
+}
+
 .btn-site {
   width: 75px;
   color: white;
@@ -50,8 +54,11 @@
 }
 
 .btn-repo {
-  background-color: rgb(37, 35, 35);
+  background-color: #fed54a;
   color: white;
+}
+.btn-group > button:hover {
+  opacity: 0.7;
 }
 .btn-group {
   display: flex;
@@ -71,3 +78,38 @@ a {
   cursor: pointer;
   transform: translateY(10px);
 }
+
+
+@media only screen and (min-width:490px) and (max-width:726px){
+  .project-content{
+   width:150px;
+   height:220px;
+  }
+  .btn-group > a {
+    font-size: 70%;
+  }
+
+}
+@media only screen and (min-width: 325px) and (max-width: 475px) {
+   
+  .project-head>h1{
+    color:yellow;
+    font-size: 32px;
+  }
+  .project-page{
+    height:70vh;
+  }
+  .project-content{
+    width:40%;
+    height:30%;
+    padding:4px;
+   }
+  
+   .btn-group > a {
+     font-size: 50%;
+   }
+   .project-content > h1 {
+    font-size: 12px;
+  }
+ 
+} 

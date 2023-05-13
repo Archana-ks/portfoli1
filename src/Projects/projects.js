@@ -1,6 +1,7 @@
 import React from "react";
 import "./projects.css";
-
+import project1 from "../Images/project1.png";
+import project2 from "../Images/project2.png";
 
 
 const Projects = () => {
@@ -14,6 +15,7 @@ const Projects = () => {
       <div className="project-page">
         <div className="project-content">
           <h1>ECommerce Cart</h1>
+          <img src={project1} alt="project-name" />
           <h3>Representing frontend cart design</h3>
           <div className="btn-group">
             <a
@@ -22,8 +24,9 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="btn-repo"
             >
-              CODE
+              Code
             </a>
+
             <a
               href={"https://courageous-cassata-1cc36d.netlify.app/"}
               target="_blank"
@@ -32,12 +35,12 @@ const Projects = () => {
             >
               Live Site
             </a>
-            
-  
+         
           </div>
         </div>
         <div className="project-content">
           <h1>Employee Management</h1>
+          <img src={project2} alt="project-name" />
           <h3>Managing employee details</h3>
           <div className="btn-group">
             <a
