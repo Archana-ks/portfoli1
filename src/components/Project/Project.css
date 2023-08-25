@@ -1,0 +1,168 @@
+
+
+.project-img{
+    width: 400px;
+    height: 200px;
+    transition: 1s;
+}
+.project-img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.projects{
+    border: 2px solid black;
+    width: 420px;
+    height: 470px;
+    background:rgb(2, 47, 92) ;
+    color:var(--yellow);
+    align-items: center;
+    text-align: center;
+   
+    border-radius: 20px;
+    margin-top: 100px;
+  
+}
+.projects:hover{
+ 
+  color: rgb(245, 242, 242);
+}
+.project-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.project-list{
+    margin-top: 17rem;
+    margin-bottom: 15rem;
+    border-left: 10px solid white;
+    border-right:10px solid white;
+    border-radius: 20px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.btn-p{
+    background-color: rgb(138, 216, 230);
+    color: rgb(41, 4, 4);
+    border-radius: 5px;
+    margin: 10px;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
+.btn-p:hover{
+    background-color: black;
+    color: white;
+}
+.project-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  
+}
+.tools{
+    font-size: 10px;
+   background-color: azure;
+   color: black;
+    padding: 5px;
+   font-weight: 800;
+}
+.backside{
+    color: rgb(4, 4, 4);
+background-color: aliceblue;
+}
+
+
+
+.maincontainer{
+    position: relative;
+   
+
+}
+
+.thecard{
+    position: absolute;
+    width:100%;
+    height:100%;
+    transform-style: preserve-3d;
+    transition: all .5s ease;
+    
+}
+
+.thecard:hover{
+    transform: rotateY(180deg);
+   
+   
+}
+.thecard:hover .thefront{
+    transform: rotateY(0deg);
+    
+  
+}
+.thecard:hover .theback{
+    transform: rotateY(180deg);
+    position: relative;
+    
+  
+}
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+   
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.theback{
+    position: absolute;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+   
+    color:rgb(253, 249, 249);
+    transform: rotateY(180deg);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.heading{
+    color: white;
+   font-size: 15px;
+  
+}
+.d-head{
+    font-weight: bolder;
+    font-size: 20px;
+    background: rgb(7, 29, 67);
+}
+
+.description{
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:640px){
+
+    .projects{
+        transform: scale(0.6);
+    }
+    .project-details{
+        flex-direction: column;
+    
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    .projects{
+        transform: scale(1);
+    }
+    .project-details{
+        flex-direction: column;
+    
+    }
+
+}
